@@ -285,7 +285,11 @@ line-height: 220%;
     color: var(--darken-text);
   }
 
-
+  .ru-gradient {
+    background: linear-gradient(0deg, #3498db 50%, #f1c40f 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 
 
 
