@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProxyCase</title>
+  <link rel="icon" href="assets/logo-main.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,500,700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background: none;">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo-main.svg" alt="Logo" width="52">
+          <span class="header__logo-label ps-3">proxycase</span>
+        </a>
+
+        <div class="collapse navbar-collapse px-3 pt-1" id="navbarNav">
+          <ul class="navbar-nav nav-underline header__navbar-nav gap-5">
+            <li class="nav-item">
+              <a class="nav-link header__navbar-item" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  header__navbar-item" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  header__navbar-item" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  header__navbar-item" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__type-box d-inline-flex align-items-center">
+          <form role="search" class="d-flex">
+            <div class="mx-4">
+              <input type="search" class="form-control header__search-field px-3 py-2" id="searchForm"
+                aria-describedby="Search" placeholder="Search">
+            </div>
+          </form>
+          <div class="header__switch-lang-box d-inline-flex align-items-center">
+            <input type="radio" class="btn-check" name="btnradio__lang" id="btnradio__lang1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary header__lang-switcher p-2 px-3" for="btnradio__lang1">En</label>
+
+            <input type="radio" class="btn-check" name="btnradio__lang" id="btnradio__lang2" autocomplete="off">
+            <label class="btn btn-outline-primary header__lang-switcher p-2 px-3" for="btnradio__lang2">Ru</label>
+          </div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- intro -->
+    <div class="container py-5 intro">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 intro-left gap-4 d-flex flex-column align-items-start">
+          <h1 class="">
+            Trusted <span class="h1-highlight">proxy services</span><br>
+            to get the edge you need</h1>
+          <p>Explore cutting-edge proxy solutions on our platform. Benefit from unbiased reviews, expert insights, and
+            trustworthy rankings, empowering your business potential with every click.</p>
+          <div class="d-inline-flex gap-3">
+            <a href="#" class="btn btn-primary d-inline-flex">Check proxy catalogue</a>
+            <a href="#" class="btn btn-transparent">About us<img src="assets/arrow.svg" alt="arrow"
+                class="ps-3 ms-auto" /></a>
+          </div>
+          <!--           <div class="purpose-section mt-4">
+            <h6 class="purpose-section-headline">BEST SERVICES FOR</h6>
+            <div class="purpose-section-container">
+              <div class="purpose-section-row">
+                <div class="purpose-section-item">digital marketing</div>
+                <div class="purpose-section-item">seo</div>
+                <div class="purpose-section-item">software developement</div>
+              </div>
+              <div class="purpose-section-row">
+                <div class="purpose-section-item">cybersecurity</div>
+                <div class="purpose-section-item">e-commerce</div>
+                <div class="purpose-section-item">data analysis</div>
+              </div>
+              <div class="purpose-section-row">
+                <div class="purpose-section-item">market research</div>
+                <div class="purpose-section-item">smm</div>
+                <div class="purpose-section-item">advertising</div>
+              </div>
+          </div>
+          </div> -->
+        </div>
+        <div class="col-md-5">
+          <img src="assets/main-picture.svg" class="img-fluid" alt="Intro image">
+        </div>
+      </div>
+    </div>
+
+    <!-- featured -->
+    <div class="container featured ">
+      <div class="row">
+        <!-- featured/sticky-menu -->
+        <div class="col-md-3  sticky-top align-self-start" id="sticky-sidebar">
+          <h2 class="mt-4 mb-4">Top-tier services</h2>
+
+          <div id="featured-services-list" class="card list-group featured__list-group flex-column gap-3 mt-3 p-3">
+            <a class="list-group-item d-flex align-items-center" href="#simple-list-item-1"><img
+                src="assets/oxy-logo.svg" class="featured__sidebar-image" width="50px"></img>Oxylabs
+              <img src="assets/arrow.svg" alt="arrow" class="ps-3 ms-auto me-3 featured__active-arrow" /></a>
+            <a class="list-group-item d-flex align-items-center" href="#simple-list-item-2"><img
+                src="assets/brightdata-logo.svg" class="featured__sidebar-image" width="50px"></img>Bright Data
+              <img src="assets/arrow.svg" alt="arrow" class="ps-3 ms-auto me-3
+            featured__active-arrow" /></a>
+            <a class="list-group-item d-flex align-items-center" href="#simple-list-item-3"><img
+                src="assets/smartproxy-logo.svg" class="featured__sidebar-image" width="50px"></img>Smartproxy
+              <img src="assets/arrow.svg" alt="arrow" class="ps-3 ms-auto me-3
+            featured__active-arrow" /></a>
+            <a class="list-group-item d-flex align-items-center" href="#simple-list-item-4"><img
+                src="assets/soax-logo.svg" class="featured__sidebar-image" width="50px"></img>Soax
+              <img src="assets/arrow.svg" alt="arrow" class="ps-3 ms-auto me-3
+            featured__active-arrow" /></a>
+            <a class="list-group-item d-flex align-items-center" href="#simple-list-item-5"><img
+                src="assets/webshare-logo.svg" class="featured__sidebar-image" width="50px"></img>Webshare
+              <img src="assets/arrow.svg" alt="arrow" class="ps-3 ms-auto me-3
+            featured__active-arrow" /></a>
+
+            <a href="#" class="btn btn-secondary d-flex justify-content-center my-2 p-2">View all proxy providers</a>
+          </div>
+
+          <div class="card p-4 mt-4 pt-4 gap-3 flex-column d-flex align-items-center"
+            style="background-color: var(--secondary-color)">
+            <h5>Why are these services really trustworthy?</h5>
+            <!-- <h3 class="mb-3">Why are these services really trustworthy?</h3> -->
+            <p>We work only with legal providers that we personally verified, no botnet and proxy lists with short-lived
+              proxies</p>
+          </div>
+
+
+        </div>
+        <div class="col-md-9 d-flex flex-column mt-2">
+          <!-- featured/choose-proxy-type -->
+          <div class=" ms-auto" role="group">
+            <div class="featured__type-box mb-2">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btnradio1">Residential</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2">Mobile</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio3">Datacenter</label>
+            </div>
+          </div>
+          <!-- featured/service-cards -->
+          <div data-bs-spy="scroll" data-bs-target="#featured-services-list" data-bs-offset="0"
+            data-bs-smooth-scroll="true" class="scrollspy- mt-3 d-flex flex-column gap-3" tabindex="0">
+            <!-- eatured/service-card 1-->
+            <div class="card gap-4 p-4" id="simple-list-item-1" data-bs-theme="dark">
+              <div class="d-inline-flex gap-3 align-items-center">
+                <img src="assets/oxy-logo.png" class="" width="170" alt="Oxylabs">
+                <div class="flex-column m-3 gap-2 d-flex">
+                  <h2 class="card-title">Oxylabs</h2>
+                  <div class="d-flex gap-2"><span>Excellent</span><img src="assets/tp-5-stars.svg" /> <span>436</span>
+                    <span>reviews on</span> <img src="assets/tp-logo.svg" width="25" /> <span>Trustpilot</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6 class="mt-1">Desctiption</h6>
+                <p class="card-text">Oxylabs is a leading proxy service provider, offering a comprehensive range of web
+                  scraping and data extraction solutions. With a vast proxy network, advanced technologies, and a
+                  user-friendly interface, Oxylabs empowers businesses to access and gather web data seamlessly,
+                  facilitating market research, competitive intelligence, and brand monitoring.</p>
+              </div>
+
+              <div class="d-inline-flex w-100 mb-3 gap-3">
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Pros</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Cons</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline-flex mt-1 gap-3">
+                <a href="#" class="btn btn-primary">Try proxy provider for free</a>
+                <a href="#" class="btn btn-transparent align-items-center py-2 px-4">Read full review<img
+                    src="assets/arrow.svg" alt="arrow" class="ps-3 " /></a>
+              </div>
+            </div>
+            <!-- eatured/service-card 2-->
+            <div class="card gap-4 p-4" id="simple-list-item-2" data-bs-theme="dark">
+              <div class="d-inline-flex gap-3 align-items-center">
+                <img src="assets/oxy-logo.png" class="" width="170" alt="Oxylabs">
+                <div class="flex-column m-3 gap-2 d-flex">
+                  <h2 class="card-title">Oxylabs</h2>
+                  <div class="d-flex gap-2"><span>Excellent</span><img src="assets/tp-5-stars.svg" /> <span>436</span>
+                    <span>reviews on</span> <img src="assets/tp-logo.svg" width="25" /> <span>Trustpilot</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6 class="mt-1">Desctiption</h6>
+                <p class="card-text">Oxylabs is a leading proxy service provider, offering a comprehensive range of web
+                  scraping and data extraction solutions. With a vast proxy network, advanced technologies, and a
+                  user-friendly interface, Oxylabs empowers businesses to access and gather web data seamlessly,
+                  facilitating market research, competitive intelligence, and brand monitoring.</p>
+              </div>
+
+              <div class="d-inline-flex w-100 mb-3 gap-3">
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Pros</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Cons</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline-flex mt-1 gap-3">
+                <a href="#" class="btn btn-primary d-flex">Try proxy provider for free</a>
+                <a href="#" class="btn btn-transparent">Read full review<img src="assets/arrow.svg" alt="arrow"
+                    class="ps-3" /></a>
+              </div>
+            </div>
+            <!-- eatured/service-card 3-->
+            <div class="card gap-4 p-4" id="simple-list-item-3" data-bs-theme="dark">
+              <div class="d-inline-flex gap-3 align-items-center">
+                <img src="assets/oxy-logo.png" class="" width="170" alt="Oxylabs">
+                <div class="flex-column m-3 gap-2 d-flex">
+                  <h2 class="card-title">Oxylabs</h2>
+                  <div class="d-flex gap-2"><span>Excellent</span><img src="assets/tp-5-stars.svg" /> <span>436</span>
+                    <span>reviews on</span> <img src="assets/tp-logo.svg" width="25" /> <span>Trustpilot</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6 class="mt-1">Desctiption</h6>
+                <p class="card-text">Oxylabs is a leading proxy service provider, offering a comprehensive range of web
+                  scraping and data extraction solutions. With a vast proxy network, advanced technologies, and a
+                  user-friendly interface, Oxylabs empowers businesses to access and gather web data seamlessly,
+                  facilitating market research, competitive intelligence, and brand monitoring.</p>
+              </div>
+
+              <div class="d-inline-flex w-100 mb-3 gap-3">
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Pros</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Cons</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline-flex mt-1 gap-3">
+                <a href="#" class="btn btn-primary d-flex">Try proxy provider for free</a>
+                <a href="#" class="btn btn-transparent">Read full review<img src="assets/arrow.svg" alt="arrow"
+                    class="ps-3" /></a>
+              </div>
+            </div>
+            <!-- eatured/service-card 4-->
+            <div class="card gap-4 p-4" id="simple-list-item-4" data-bs-theme="dark">
+              <div class="d-inline-flex gap-3 align-items-center">
+                <img src="assets/oxy-logo.png" class="" width="170" alt="Oxylabs">
+                <div class="flex-column m-3 gap-2 d-flex">
+                  <h2 class="card-title">Oxylabs</h2>
+                  <div class="d-flex gap-2"><span>Excellent</span><img src="assets/tp-5-stars.svg" /> <span>436</span>
+                    <span>reviews on</span> <img src="assets/tp-logo.svg" width="25" /> <span>Trustpilot</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6 class="mt-1">Desctiption</h6>
+                <p class="card-text">Oxylabs is a leading proxy service provider, offering a comprehensive range of web
+                  scraping and data extraction solutions. With a vast proxy network, advanced technologies, and a
+                  user-friendly interface, Oxylabs empowers businesses to access and gather web data seamlessly,
+                  facilitating market research, competitive intelligence, and brand monitoring.</p>
+              </div>
+
+              <div class="d-inline-flex w-100 mb-3 gap-3">
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Pros</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Cons</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline-flex mt-1 gap-3">
+                <a href="#" class="btn btn-primary d-flex">Try proxy provider for free</a>
+                <a href="#" class="btn btn-transparent">Read full review<img src="assets/arrow.svg" alt="arrow"
+                    class="ps-3" /></a>
+              </div>
+            </div>
+            <!-- eatured/service-card 5-->
+            <div class="card gap-4 p-4" id="simple-list-item-5" data-bs-theme="dark">
+              <div class="d-inline-flex gap-3 align-items-center">
+                <img src="assets/oxy-logo.png" class="" width="170" alt="Oxylabs">
+                <div class="flex-column m-3 gap-2 d-flex">
+                  <h2 class="card-title">Oxylabs</h2>
+                  <div class="d-flex gap-2"><span>Excellent</span><img src="assets/tp-5-stars.svg" /> <span>436</span>
+                    <span>reviews on</span> <img src="assets/tp-logo.svg" width="25" /> <span>Trustpilot</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6 class="mt-1">Desctiption</h6>
+                <p class="card-text">Oxylabs is a leading proxy service provider, offering a comprehensive range of web
+                  scraping and data extraction solutions. With a vast proxy network, advanced technologies, and a
+                  user-friendly interface, Oxylabs empowers businesses to access and gather web data seamlessly,
+                  facilitating market research, competitive intelligence, and brand monitoring.</p>
+              </div>
+
+              <div class="d-inline-flex w-100 mb-3 gap-3">
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Pros</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/check-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex-column w-50">
+                  <h6 class="mt-1">Cons</h6>
+                  <ul class="list-group featured__proscons-list">
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      3,000+ servers in 94 countries
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      5 simultaneous device connections
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      30-day money-back guarantee
+                    </li>
+                    <li class="list-group-item featured__proscons-item d-flex align-items-center">
+                      <img src="assets/x-lg.svg" alt="pros" class="pe-2" />
+                      Can access: Netflix, Amazon Prime Video
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-inline-flex mt-1 gap-3">
+                <a href="#" class="btn btn-primary d-flex">Try proxy provider for free</a>
+                <a href="#" class="btn btn-transparent">Read full review<img src="assets/arrow.svg" alt="arrow"
+                    class="ps-3" /></a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- info -->
+    <div class="container">
+      <div class="row py-5">
+        <!-- indo-menu -->
+        <div class="col-md-4 align-self-center">
+          <h2 class="mb-4">Worth to know</h2>
+
+          <div class="info__button-group gap-4 py-3 flex-column align-items-start d-flex" role="group">
+            <!-- <a class="p-2 list-group-item d-flex align-items-center active" href="#">Proxy types</a> -->
+
+            <input type="radio" class="btn-check info__btn-check" name="inforadio" id="inforadio1" autocomplete="off"
+              checked>
+            <label class="btn btn-outline-primary d-inline-flex text-start" for="inforadio1">Proxy types<img
+                src="assets/arrow.svg" alt="arrow" class="ps-5" /></label>
+            <input type="radio" class="btn-check info__btn-check" name="inforadio" id="inforadio2" autocomplete="off">
+            <label class="btn btn-outline-primary d-inline-flex text-start" for="inforadio2">Other information<img
+                src="assets/arrow.svg" alt="arrow" class="ps-5" /></label>
+            <input type="radio" class="btn-check info__btn-check" name="inforadio" id="inforadio3" autocomplete="off">
+            <label class="btn btn-outline-primary d-inline-flex text-start" for="inforadio3">Some interesting
+              information<img src="assets/arrow.svg" alt="arrow" class="ps-5" /></label>
+            <input type="radio" class="btn-check info__btn-check" name="inforadio" id="inforadio4" autocomplete="off">
+            <label class="btn btn-outline-primary d-inline-flex text-start" for="inforadio4">Interesting information<img
+                src="assets/arrow.svg" alt="arrow" class="ps-5" /></label>
+
+            <a href="#" class="btn btn-secondary d-inline-flex mt-3">Check our blog<img src="assets/arrow.svg"
+                alt="arrow" class="ps-3 ms-auto" /></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 gap-4 align-self-center flex-column d-flex">
+          <!-- info-card1 -->
+          <div class="card p-4 flex-column align-items-start d-flex" data-bs-theme="dark">
+            <div class="d-flex align-items-center gap-2">
+              <img src="assets/residential-img.svg" width="90" alt="Residential img">
+              <div class="flex-column ms-3 gap-2 d-inline-flex">
+                <h3 class="card-title">Residential Proxy</h3>
+              </div>
+            </div>
+
+            <div class="pt-4 pb-5">
+              <h6 class="mt-4">Desctiption</h6>
+              <p class="card-text">Residential proxies are a type of proxy server that use IP addresses assigned to
+                common providers of home internet, making them more difficult to detect and block than other types of
+                proxies.</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary d-inline-flex">Read full article<img src="assets/arrow.svg" alt="arrow"
+                class="ps-3" /></a>
+          </div>
+
+          <!-- info-card2 -->
+          <div class="card p-4 flex-column align-items-start d-flex" data-bs-theme="dark">
+            <div class="d-flex align-items-center gap-2">
+              <img src="assets/residential-img.svg" width="90" alt="Residential img">
+              <div class="flex-column ms-3 gap-2 d-inline-flex">
+                <h3 class="card-title">Residential Proxy</h3>
+              </div>
+            </div>
+
+            <div class="pt-4 pb-5">
+              <h6 class="mt-4">Desctiption</h6>
+              <p class="card-text">Residential proxies are a type of proxy server that use IP addresses assigned to
+                common providers of home internet, making them more difficult to detect and block than other types of
+                proxies.</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary d-inline-flex">Read full article<img src="assets/arrow.svg" alt="arrow"
+                class="ps-3" /></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 align-self-center">
+          <!-- info-card3 -->
+          <div class="card p-4 flex-column align-items-start d-flex" data-bs-theme="dark">
+            <div class="d-flex align-items-center gap-2">
+              <img src="assets/residential-img.svg" width="90" alt="Residential img">
+              <div class="flex-column ms-3 gap-2 d-inline-flex">
+                <h3 class="card-title">Residential Proxy</h3>
+              </div>
+            </div>
+
+            <div class="pt-4 pb-5">
+              <h6 class="mt-4">Desctiption</h6>
+              <p class="card-text">Residential proxies are a type of proxy server that use IP addresses assigned to
+                common providers of home internet, making them more difficult to detect and block than other types of
+                proxies.</p>
+            </div>
+
+            <a href="#" class="btn btn-secondary d-inline-flex">Read full article<img src="assets/arrow.svg" alt="arrow"
+                class="ps-3" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- news -->
+    <div class="container pb-5">
+      <div class="row flex-column gap-3">
+        <div class="d-inline-flex">
+          <h2>What's new</h2>
+          <a href="#" class="btn btn-transparent ms-auto px-3 py-2">Check all updates<img src="assets/arrow.svg"
+              alt="arrow" class="ps-3" /></a>
+        </div>
+        <!-- carousel-->
+        <div id="carouselNewsControls" class="carousel">
+          <div class="carousel-inner">
+
+            <a href="#" class="carousel-item active overflow-hidden">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-1.png" class="img-fluid h-100 w-100 h-100 " alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Oxylabs Review</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-2.png" class=" img-fluid w-100 h-100 " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronium.io Review</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-3.png" class="img-fluid d-block w-100 h-100 " alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to ProxyCase</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-2.png" class=" img-fluid w-100 h-100 " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronium.io Review</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-3.png" class="img-fluid d-block w-100 h-100 " alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to ProxyCase</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-2.png" class=" img-fluid w-100 h-100 " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronium.io Review</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-3.png" class="img-fluid d-block w-100 h-100 " alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to ProxyCase</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-2.png" class=" img-fluid w-100 h-100 " alt="..."></div>
+                <div class="card-body">
+                  <h5 class="card-title">Coronium.io Review</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="carousel-item">
+              <div class="carousel-card card  overflow-hidden" data-bs-theme="dark">
+                <div class="img-wrapper"><img src="assets/new-3.png" class="img-fluid d-block w-100 h-100 " alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Welcome to ProxyCase</h5>
+                  <p class="card-text">Dec 15 <span class="news__date-separator"></span> 2023</p>
+                </div>
+              </div>
+            </a>
+
+
+
+
+
+
+
+
+
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNewsControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNewsControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- intro -->
+    <div class="container my-5">
+      <div class="row footer-wrapper pt-4 pb-5">
+        <div class="col-md-4">
+          <div>
+            <img src="assets/logo-main-darken.svg" alt="Logo" width="52">
+            <span class="header__logo-label ps-2">proxycase</span>
+          </div>
+          <p class="darken-text pe-5 mt-1" style="width: 80%;">A convenient catalog of proxy services with ratings and reviews. Find reliable solutions for your business with our platform.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="">Proxy Types</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">Residential</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Mobile</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Datacenter</a></li>
+          </ul>
+          <h6 class="mt-4">Use cases</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">SEO</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Traffic Arbitrage</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="">Reviews</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">Oxylabs Review</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Bright Data Review</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Coronium Review</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Webshare Review</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Soax Data Review</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Smartproxy Review</a></li> 
+
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="">Proxy Types</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">Residential</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Mobile</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Datacenter</a></li>  
+          </ul>
+          <h6 class="mt-4">Use cases</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">SEO</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Traffic Arbitrage</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Advertising</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6 class="">About</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">About us</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">News</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">Privacy Policy</a></li>  
+            <li class=" d-flex"><a href="#" class="footer__link">Terms of Use</a></li>  
+          </ul>
+          <h6 class="mt-4">Langauge</h6>
+          <ul class="list-group">
+            <li class=" d-flex"><a href="#" class="footer__link">EN</a></li>
+            <li class=" d-flex"><a href="#" class="footer__link">RU</a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="d-flex justify-content-end my-3 darken-text">2024 © PROXYCASE</span>
+    </div>
+
+
+
+
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <script>
+    var multipleCardCarousel = document.querySelector(
+      "#carouselNewsControls"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+        interval: false,
+      });
+      var carouselWidth = $(".carousel-inner")[0].scrollWidth * 3;
+      var cardWidth = $(".carousel-item").width() * 3;
+      var scrollPosition = 0;
+      $("#carouselNewsControls .carousel-control-prev").hide();
+      $("#carouselNewsControls .carousel-control-next").on("click", function () {
+        if (scrollPosition < carouselWidth - cardWidth * 3) {
+          scrollPosition += cardWidth;
+          $("#carouselNewsControls .carousel-inner").animate(
+            { scrollLeft: scrollPosition },
+            600
+          );
+          if (scrollPosition > 0) {
+            $("#carouselNewsControls .carousel-control-prev").show();
+          }
+          if (scrollPosition > carouselWidth - cardWidth * 8) {
+            $("#carouselNewsControls .carousel-control-next").hide();
+          }
+        }
+      });
+      $("#carouselNewsControls .carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $("#carouselNewsControls .carousel-inner").animate(
+            { scrollLeft: scrollPosition },
+            600
+          );
+          if (scrollPosition <= 0) {
+            $("#carouselNewsControls .carousel-control-prev").hide();
+          }
+          if (scrollPosition < carouselWidth - cardWidth * 3) {
+            $("#carouselNewsControls .carousel-control-next").show();
+          }
+        }
+      });
+    } else {
+      $(multipleCardCarousel).addClass("slide");
+    }
+  </script>
+
+
+</body>
+
+</html>
